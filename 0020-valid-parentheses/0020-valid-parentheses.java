@@ -4,14 +4,12 @@ class Solution {
         char[] ch = st.toCharArray();
          if(st.length() == 0 || st.length() == 1) return false;
         for(char c : ch){
-            if(c == '{' || c == '(' || c == '[')
-            {
-            s.push(c);
-            continue;
+            if(c == '{' || c == '(' || c == '['){
+                s.push(c);
+                continue;
             }
             else if(c == '}'){
-                if(s.isEmpty() || s.pop() != '{')
-                return false;
+                if(s.isEmpty() || s.pop() != '{') return false;
             }
             else if(c == ')'){
                 if(s.isEmpty() || s.pop() != '(') return false;
@@ -21,6 +19,5 @@ class Solution {
             }
         }
         return s.isEmpty();
-
     }
 }
