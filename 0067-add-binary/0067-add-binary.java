@@ -8,7 +8,6 @@ class Solution {
             else if(a_len<b_len) a = addZeros(a, a_len, b_len);
             a_len = a.length()-1;
             b_len = b.length()-1;
-            System.out.println(a+" "+b);
             while(a_len>=0 && b_len>=0){
                 
                 if(a.charAt(a_len) == '1' && b.charAt(b_len) == '1'){
@@ -19,7 +18,6 @@ class Solution {
                     remain = 1;
                 }
                 else if(a.charAt(a_len) == '0' && b.charAt(b_len) == '0'){
-                    System.out.println(String.valueOf(remain));System.out.println(String.valueOf(res));
                     res = String.valueOf(remain) + res;
                     remain = 0;
                 }
