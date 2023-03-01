@@ -8,8 +8,7 @@ class Solution {
             else if(a_len<b_len) a = addZeros(a, a_len, b_len);
             a_len = a.length()-1;
             b_len = b.length()-1;
-            while(a_len>=0 && b_len>=0){
-                
+            while(a_len>=0 && b_len>=0){   
                 if(a.charAt(a_len) == '1' && b.charAt(b_len) == '1'){
                     if(remain == 1)
                         res = "1" + res;
