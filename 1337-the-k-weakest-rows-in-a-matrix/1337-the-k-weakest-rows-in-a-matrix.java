@@ -11,7 +11,6 @@ class Solution {
             }
             arrI[index] = i;
             arrV[index]= count;  
-            System.out.println("index : "+i+" value : "+count);
             index++;
         }
         return Arrays.copyOfRange(sortByValue(arrI, arrV), 0, k);
@@ -30,7 +29,6 @@ class Solution {
                 }
             }
         }
-        for(int i: indices) System.out.print(i+" ");
         return indices;
     }
     
